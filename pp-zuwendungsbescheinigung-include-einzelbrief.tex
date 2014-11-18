@@ -1,0 +1,87 @@
+\newcommand\einzelbrief[8]{
+
+\begin{letter}{
+#1 % Vorname Name
+\\
+#2		% Strasse
+\\
+#3		% PLZ Ort
+\\                                    
+#4		% Land
+}
+
+\opening{
+\textbf{Bestätigung über Geldzuwendungen/Mitgliedsbeitrag} \\
+
+  \parbox[b]{\linewidth}{\noindent
+  \fbox{
+    \parbox[b]{0.3\linewidth}{
+      \scriptsize{\textbf{Name und Anschrift des Zuwendenden:}}\\
+      \normalsize{#1\\#2\\#3\\#4}
+    }
+  }
+}
+
+\vspace{3mm}
+\small{im Sinne des § 34g, § 10b des Einkommensteuergesetzes an politische Parteien im Sinne des Parteiengesetzes}
+}
+
+\begin{center}
+\begin{tabular}{|L{4cm}|L{8.5cm}|L{2.5cm}|}
+\hline
+\scriptsize{\textbf{Betrag der Zuwendung - in Ziffern}}  &
+\scriptsize{\textbf{- in Buchstaben -}} &
+\scriptsize{\textbf{Tag der Zuwendung:}} \\
+\ctab #5 & \ctab #6 & \ctab #7 \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{5 mm}
+Es handelt sich um den Verzicht auf die Erstattung von Aufwendungen: \hspace{5mm}
+\fbox{\parbox[c][1em]{0.75em}{\ifthenelse{#8=0}{\hspace{0.75em}}{X}}} Ja \hspace{5mm} \fbox{\parbox[c][1em]{0.75em}{\ifthenelse{#8=1}{\hspace{0.75em}}{X}}} Nein
+
+\vspace{5 mm}
+%\small{
+Es wird bestätigt, dass diese Zuwendung ausschließlich für die satzungsgemäßen Zwecke verwendet wird.
+%}
+
+% \newcommand{\bedingung}{1}
+% \ifx\gliederung\undefined GLIEDERUNG UNDEF \else HAB GLIEDERUNG \fi
+% \ifx\bescheinigung\undefined BESCHEINIGUNG UNDEF \else HAB BESCHEINIGUNG \fi
+
+\vspace{10 mm}
+% \hspace{6cm}\includegraphics[height=1cm]{unterschrift.eps}
+
+\hspace{7.5cm}
+\ifthenelse{\unterschrift=1}{
+	\pgfuseimage{unterschrift}
+}{}
+
+\begin{center}
+\begin{tabular}{p{7cm}p{7cm}}
+\bescheinigungort{}, \bescheinigungdatum & 
+\ifx \bescheinigungausstellername \undefined \gliederungschatzi{}, Schatzmeister \else i.A. \bescheinigungausstellername, \bescheinigungausstellerfunktion \fi \\
+\hline
+\scriptsize{(Ort, Datum)} & \scriptsize{(Unterschrift, Funktion)}  \\
+\end{tabular}
+\end{center}
+
+\vspace{5 mm}
+\vspace{5 mm}
+\ifthenelse{\unterschrift=1}{
+	\textbf{Hinweise:}
+}{
+	\textbf{Hinweis:}
+}
+
+Wer vorsätzlich oder grob fahrlässig eine unrichtige Zuwendungsbestätigung erstellt oder wer veranlasst, dass Zuwendungen nicht zu den in der Zuwendungsbestätigung angegebenen steuerbegünstigten Zwecken verwendet werden, haftet für die entgangene Steuer (§ 34g Satz 3, § 10b Abs. 4 EStG). 
+
+\ifthenelse{\unterschrift=1}{
+\vspace{5 mm}
+
+Diese Bescheinigung ist maschinell erstellt und benötigt gemäß EStR R 10b.1 Absatz 4 keine handschriftliche Unterschrift. Das Verfahren wurde am \unterschriftdatummeldung{} gegenüber dem Finanzamt \unterschriftfinanzamt für die Piratenpartei Deutschland, \gliederunglang{}, Steuernummer \unterschriftsteuernummer, angezeigt.
+}{}
+
+\end{letter}
+}

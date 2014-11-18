@@ -1,0 +1,100 @@
+\newcommand\sammelbrief[8]{
+
+\begin{letter}{
+#1 % Vorname Name
+\\
+#2		% Strasse
+\\
+#3		% PLZ Ort
+\\                                    
+#4		% Land	
+}
+
+\opening{
+\textbf{Sammelbestätigung über Geldzuwendungen/Mitgliedsbeitrag} \\
+
+  \parbox[b]{\linewidth}{\noindent
+  \fbox{
+    \parbox[b]{0.3\linewidth}{
+      \scriptsize{\textbf{Name und Anschrift des Zuwendenden:}}\\
+      \normalsize{#1\\#2\\#3\\#4}
+    }
+  }
+}
+
+\vspace{3mm}
+\small{im Sinne des § 34g, § 10b des Einkommensteuergesetzes an politische Parteien im Sinne des Parteiengesetzes}
+}
+
+\begin{center}
+\begin{tabular}{|L{2,75cm}|L{8,75cm}|L{3,5cm}|}
+\hline
+\scriptsize{\textbf{Gesamtbetrag der Zuwendung - in Ziffern}}  &
+\scriptsize{\textbf{- in Buchstaben -}} &
+\scriptsize{\textbf{Zeitraum der Sammelbestätigung:}} \\
+\ctab #5 & \ctab #6 & \ctab #7 \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{5 mm}
+Es wird bestätigt, dass diese Zuwendung ausschließlich für die satzungsgemäßen Zwecke verwendet wird.
+
+\vspace{5 mm}
+Es wird bestätigt, dass über die in der Gesamtsumme enthaltenen Zuwendungen keine weiteren Bestätigungen, weder formelle Zuwendungsbestätigungen noch Beitragsquittungen oder Ahnliches ausgestellt wurden und werden.
+
+\vspace{5 mm}
+Ob es sich um den Verzicht auf Erstattung von Aufwendungen handelt, ist der Anlage zur Sammelbestätigung zu entnehmen.
+
+% \newcommand{\bedingung}{1}
+% \ifx\gliederung\undefined GLIEDERUNG UNDEF \else HAB GLIEDERUNG \fi
+% \ifx\bescheinigung\undefined BESCHEINIGUNG UNDEF \else HAB BESCHEINIGUNG \fi
+
+\vspace{10 mm}
+% \hspace{6cm}\includegraphics[height=1cm]{unterschrift.eps}
+
+\hspace{7.5cm}
+%\ifthenelse{\unterschrift=1}{
+%	\pgfuseimage{unterschrift}
+%}{}
+
+\begin{center}
+\begin{tabular}{p{7cm}p{7cm}}
+\bescheinigungort{}, \bescheinigungdatum & 
+\ifx \bescheinigungausstellername \undefined \gliederungschatzi{}, Schatzmeister \else i.A. \bescheinigungausstellername, \bescheinigungausstellerfunktion \fi \\
+\hline
+\scriptsize{(Ort, Datum)} & \scriptsize{(Unterschrift, Funktion)}  \\
+\end{tabular}
+\end{center}
+
+\vspace{5 mm}
+\vspace{5 mm}
+%\ifthenelse{\unterschrift=1}{
+%	\textbf{Hinweise:}
+%}{
+	\textbf{Hinweis:}
+%}
+
+Wer vorsätzlich oder grob fahrlässig eine unrichtige Zuwendungsbestätigung erstellt oder wer veranlasst, dass Zuwendungen nicht zu den in der Zuwendungsbestätigung angegebenen steuerbegünstigten Zwecken verwendet werden, haftet für die entgangene Steuer (§ 34g Satz 3, § 10b Abs. 4 EStG). 
+
+%\ifthenelse{\unterschrift=1}{
+%\vspace{5 mm}
+%
+%Diese Bescheinigung ist maschinell erstellt und benötigt gemäß EStR R 10b.1 Absatz 4 keine handschriftliche Unterschrift. Das Verfahren wurde am \unterschriftdatummeldung{} gegenüber dem Finanzamt \unterschriftfinanzamt für die Piratenpartei Deutschland, \gliederunglang{}, Steuernummer \unterschriftsteuernummer, angezeigt.
+%}{}
+
+\newpage
+% \pagestyle{empty} 	% no page numbering
+
+\textbf{Anlage zur Bestätigung über Geldzuwendungen/Mitgliedsbeitrag für #1}
+
+\vspace{5 mm}
+
+\csvreader[tabular=|C{2,5cm}|C{4cm}|C{5cm}|R{3,5cm}|, head to column names, separator=semicolon, table head=\hline\textbf{Datum der Zuwendung} & \textbf{Art der Zuwendung} & \textbf{Verzicht auf die Erstattung von Aufwendungen} & \ctab  \textbf{Betrag in EUR} \\\hline, late after line = \\\hline, late after last line=\\\hline]{konto-#8.csv}%
+{Betrag=\betrag, Belegdatum=\belegdatum, Spendenart=\spendenart, Verzicht=\verzicht}
+{\ctab \Belegdatum & \Spendenart & \ctab \verzicht & \betrag }
+
+\vspace{10 mm}
+
+\end{letter}
+}

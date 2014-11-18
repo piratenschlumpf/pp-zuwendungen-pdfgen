@@ -1,0 +1,29 @@
+Ktokorrent;Buchungsk;Bezeichnung;Periode;Belegdatum;Buchungstext;Betrag;Name1;Name2;LieferStrasse;LieferPLZ;LieferOrt;LieferLand;USER_LV;Spende;Art;Storno;Bescheinigung
+1337;10;LV Nordrhein-Westphalen;2013002;04.02.2013;#73000 RK Dinge;667,11;Alpha;Alfred;A-Straße 1;44000;Dortmund;DE;NW;51300;Verzicht;;Einzel
+13;10;LV Nordrhein-Westphalen;2013004;04.04.2013;geht euch nix an;48;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;50000;Beitrag;;Sammel
+13;10;LV Nordrhein-Westphalen;2013012;04.01.2013;geht euch nix an;150;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;51010;Geld;;Sammel
+13;10;LV Nordrhein-Westphalen;2013012;04.02.2013;geht euch nix an;150;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;51010;Geld;;Sammel
+13;10;LV Nordrhein-Westphalen;2013012;04.03.2013;geht euch nix an;150;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;51010;Geld;;Sammel
+13;10;LV Nordrhein-Westphalen;2013012;04.04.2013;geht euch nix an;150;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;51010;Geld;;Sammel
+13;10;LV Nordrhein-Westphalen;2013012;04.05.2013;geht euch nix an;150;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;51010;Geld;;Sammel
+13;10;LV Nordrhein-Westphalen;2013012;04.06.2013;geht euch nix an;150;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;51010;Geld;;Sammel
+13;10;LV Nordrhein-Westphalen;2013012;04.07.2013;geht euch nix an;100;Beta;Berta;B-Strabe 2;50859;Köln;DE;NW;51010;Geld;;Sammel
+23;10;LV Nordrhein-Westphalen;2013004;04.01.2013;geht euch nix an;48;Gamma;Gerta;C-Straße 3;40477;Düsseldorf;DE;NW;50000;Beitrag;;Sammel
+23;10;LV Nordrhein-Westphalen;2013009;10.09.2013;Zqweckspende Tolle Aktion;150;Gamma;Gerta;C-Straße 3;40477;Düsseldorf;DE;NW;51600;Geld;;Sammel
+23;10;LV Nordrhein-Westphalen;2013001;17.10.2013;Spende andere tolle Aktion ;300;Gamma;Gerta;C-Straße 3;40477;Düsseldorf;DE;NW;51600;Geld;;Sammel
+23;10;LV Nordrhein-Westphalen;2013001;24.10.2013;Spende Ernie;300;Gamma;Gerta;C-Straße 3;40477;Düsseldorf;DE;NW;51600;Geld;;Sammel
+23;10;LV Nordrhein-Westphalen;2013001;05.11.2013;Spende Berti;300;Gamma;Gerta;C-Straße 3;40477;Düsseldorf;DE;NW;51600;Geld;;Sammel
+23;10;LV Nordrhein-Westphalen;2013012;16.12.2013;Spende Demo;300;Gamma;Gerta;C-Straße 3;40477;Düsseldorf;DE;NW;51600;Geld;;Sammel
+23;10;LV Nordrhein-Westphalen;2013001;04.02.2013;#100100 Spende Spezialsachen;585;Gamma;Gerta;C-Straße 3;40477;Düsseldorf;DE;NW;51400;Sach;;Sammel
+D301073;10;LV Nordrhein-Westphalen;2013001;23.09.2013;Spende Ernie;20,42;Delta;Dirk;D-Straße 3;2628 AW;Rotterdam;NL;Bund;51010;Geld;;Sammel
+D301073;10;LV Nordrhein-Westphalen;2013001;23.10.2013;Spende Berti;20,42;Delta;Dirk;D-Straße 3;2628 AW;Rotterdam;NL;Bund;51010;Geld;;Sammel
+D301073;10;LV Nordrhein-Westphalen;2013012;23.12.2013;Spende Demo;20,42;Delta;Dirk;D-Straße 3;2628 AW;Rotterdam;NL;Bund;51010;Geld;;Sammel
+42;10;LV Nordrhein-Westphalen;2013004;05.04.2013;geht euch nix an;48;Epsilon;Erich;E-Straße 3;50858;Köln;DE;NW;50000;Beitrag;x;Sammel
+42;10;LV Nordrhein-Westphalen;2013004;09.04.2013;geht euch nix an;-48;Epsilon;Erich;E-Straße 3;50858;Köln;DE;NW;50000;Beitrag;x;Sammel
+10042;10;LV Nordrhein-Westphalen;2013002;01.02.2013;geht euch nix an;36;F;Friedrich;F-Straße 3;50969;Köln;DE;NW;50000;Beitrag;;Einzel
+107;10;LV Nordrhein-Westphalen;2013009;14.09.2013;#91000 Direktkandidatenplakate;41,74;Gamma;Guste;G-Straße 3;33000;Paderborn;DE;NW;51400;Sach;;Sammel
+1070;10;LV Nordrhein-Westphalen;2013009;19.09.2013;#91000 Podiumsdiskussion;31,24;Gamma;Guste;G-Straße 3;33000;Paderborn;DE;NW;51400;Sach;;Sammel
+11107;10;LV Nordrhein-Westphalen;2013008;02.08.2013;geht euch nix an;12;Hart;Hartmut;Harttstraße 3;33647;Bielefeld;DE;NW;50000;Beitrag;;Einzel
+2337;10;LV Nordrhein-Westphalen;2013001;08.01.2013;geht euch nix an;48;Weich;Weichei;W-Straße 3;50668;Köln;DE;NW;50000;Beitrag;;Einzel
+31337;10;LV Nordrhein-Westphalen;2013001;30.01.2013;geht euch nix an;85,87;König;Klaus;K-Straße 3;80000;München;DE;NW;51600;Geld;;Sammel
+31337;10;LV Nordrhein-Westphalen;2013004;04.04.2013;geht euch nix an;48;König;Klaus;K-Straße 3;80000;München;DE;NW;50000;Beitrag;;Sammel
