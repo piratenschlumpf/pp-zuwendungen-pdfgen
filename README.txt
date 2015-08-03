@@ -6,20 +6,21 @@ Spendenbescheinigungen PDF Generation Package
 Download von https://github.com/piratenschlumpf/pp-zuwendungen-pdfgen
 
 Dieses Paket enthaelt Scripte um automatisiert Spendenbescheinigungen 
-fuer die Piratenpartei Deutschland und Untergliederungen erstellen
-zu koennen. Benoetigt dazu wird:
+fuer die Piratenpartei Deutschland und Untergliederungen automatisiert
+erstellen zu koennen. Benoetigt dazu wird:
 
  * MacOSX (=Apple) als Betriebsystem. Funktioniert mglw. auch auf Linux.
+   (ist gerüchteweise bestätigt worden)
  * Installiertes LaTeX
  * Ein Buchhaltungsextrakt von der Bundesbuchhaltung (von Irmgard)
-  * Bei Bedarf: Scan der Schatzmeisterunterschrift als .PNG sowie
-    Anmeldungung des Verfahrens beim Finanzamt gemaes EStR R 10b.1 Absatz 4.
+ * Bei Bedarf: Scan der Schatzmeisterunterschrift als .PNG sowie
+    Anmeldungung des Verfahrens beim Finanzamt gemaess EStR R 10b.1 Absatz 4.
 
 Hilfe zur Installation von LaTeX unter Mac:
-	* http://www.latexbuch.de/latex-apple-mac-os-x-installieren/
+  * http://www.latexbuch.de/latex-apple-mac-os-x-installieren/
 
-Empfohlene Downloads:
-	* MacTeX.pkg und MacTeXtras.zip von http://www.tug.org/mactex/
+Empfohlene Downloads fuer Mac:
+  * MacTeX.pkg und MacTeXtras.zip von http://www.tug.org/mactex/
 
 Anleitung:
 ==========
@@ -29,7 +30,7 @@ Anleitung:
 	(Die existierende Datei ist ein Beispiel, sie kann ueberschrieben werden)
 	Wird die Bestaetigung von Mitgliedsbeitraegen nicht gewuenscht, dann
 	  solche Eintraege aus der XLS/CSV Datei loeschen.
-	Bei Speichern waehlen: 
+	Beim Speichern waehlen: 
 		Encoding: Windows-1252/WinLatin1
 		Trennzeichen Semikolon
 		kein Hochkommatrennzeichen.
@@ -56,6 +57,9 @@ Anleitung:
 9. einzel.pdf, sach.pdf, sammel.pdf drucken und gluecklich sein.
    Beachte: sammel.pdf enthaelt jeweils 2 Seiten pro Spendenbescheinigung.
             Duplex-Drucker empfohlen um Vor- und Rueckseite zu bedrucken.
+
+Wer mit den so erzeugten PDFs ungluecklich ist moege sich melden. Die Scripte
+lassen sich anpassen - gerne nehme ich Feedback und Patches.
 
 Erstellt von @piratenschlumpf
 Kontakt: piratenschlumpf at gmail.com 
